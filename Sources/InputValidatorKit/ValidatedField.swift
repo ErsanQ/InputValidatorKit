@@ -46,7 +46,7 @@ public struct ValidatedField: View {
     }
 
     private var borderColor: Color {
-        guard isDirty else { return Color(.systemGray4) }
+        guard isDirty else { return Color.gray.opacity(0.3) }
         return result.isValid ? .green : .red
     }
 }
@@ -69,7 +69,7 @@ public struct PasswordStrengthView: View {
             HStack(spacing: 4) {
                 ForEach(0..<5) { index in
                     RoundedRectangle(cornerRadius: 2)
-                        .fill(index <= strength.rawValue ? strengthColor : Color(.systemGray5))
+                        .fill(index <= strength.rawValue ? strengthColor : Color.gray.opacity(0.2))
                         .frame(height: 4)
                 }
             }

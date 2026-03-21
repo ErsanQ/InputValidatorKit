@@ -25,9 +25,17 @@ Simple and powerful input validation for iOS. Supports UIKit and SwiftUI.
 
 ## 📦 Installation
 
+### Option 1 - Cocoapods
+
 ```ruby
 pod 'ValidatorKit', '~> 1.0.0'
 ```
+
+### Option 2 - SPM
+
+dependencies: [
+    .package(url: "https://github.com/ErsanQ/InputValidatorKit.git", from: "1.0.0")
+]
 
 ---
 
